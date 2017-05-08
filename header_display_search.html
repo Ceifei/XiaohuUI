@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="ext/Font-Awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="ui/Xiaohu/style/normalize.css">
+		<link rel="stylesheet" type="text/css" href="ui/Xiaohu/style/common.css">
+		<link rel="stylesheet" type="text/css" href="ui/Xiaohu/style/mobile.css" media="screen and (max-width:499px)">
+		<link rel="stylesheet" type="text/css" href="ui/Xiaohu/style/desktop.css" media="screen and (min-width:500px)">
+		<script src="ui/Xiaohu/script/mobile.js"></script>
+	</head>
+	<body>
+		<header class="xh-header">			
+			<div class="xh-header-brand">
+				<a href="inde.html">Xiaohu UI</a>
+			</div>
+			<ul class="xh-header-nav">
+				<li><a href="#" class="xh-active">首页</a></li>
+				<li><a href="#"></i>打印</a></li>
+				<li><a href="#"></i>音乐</a></li>
+				<li><a href="user_center.html">关于</a></li>
+			</ul>
+			<form class="xh-header-form xh-header-left xh-form-inline" data-role="search">
+			  <div class="xh-form-group">
+				<input type="text" class="xh-form-field xh-input-sm" placeholder="搜索">
+				<button type="submit" class="xh-btn xh-btn-default xh-btn-sm"><i class="fa fa-search"></i></button>
+			  </div>
+			</form>
+			<div class="xh-header-right">
+				<a href="#" class="xh-btn xh-header-btn"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a>
+				<a href="reg.html" class="xh-btn xh-header-btn"><i class="fa fa-user-circle fa-fw"></i><span> 登录</span></a>
+			</div>
+		</header>
+		<main id="content" class="xh-content">
+			<div class="xh-header">
+				<div class="xh-header-backbar">
+					<a href="header.html">
+						<i class="fa fa-arrow-left fa-fw"></i>
+					</a>
+				</div>
+				<div class="xh-header-brand">
+					<h1>搜索栏</h1>
+				</div>
+				<form class="xh-header-form" id="searchbar">
+				  <div class="xh-form-group">
+					<input type="search" class="xh-form-field" placeholder="搜索" required autofocus>
+					<button type="submit" class="xh-btn xh-btn-sm"><i class="fa fa-search"></i></button>
+				  </div>
+				</form>
+				<div class="xh-header-toolbar">
+					<a id="search_loader" class="xh-btn xh-header-btn"><i class="fa fa-search fa-fw"></i><span>搜索</span></a>
+				</div>
+			</div>
+			<article class="xh-article">
+				<h2>设置方法</h2>
+				<p>在header上添加一个xh-search类即可。代码如下：</p>
+				<p>
+				<code><pre>&lt;header class="xh-header <b>xh-search</b>"&gt;
+ &lt;div class="xh-header-brand"&gt;
+  &lt;a href="index.html"&gt;
+   &lt;i class="fa fa-firefox fa-fw"&gt;
+   &lt;/i&gt;
+   小狐网络
+  &lt;/a&gt;
+ &lt;/div&gt;
+&lt;/header&gt;</pre></code>
+			</p>
+			<button class="xh-btn xh-btn-primary" onclick="var obj=document.getElementsByClassName('xh-header-backbar')[0];obj.style.display='none';">去掉返回栏</button>
+
+			<br>
+			<a class="xh-btn xh-btn-primary" href="header.html">返回</a>
+			</article>
+		</main>
+		<footer></footer>
+	</body>
+</html>

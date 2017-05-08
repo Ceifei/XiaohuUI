@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="ext/Font-Awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="ui/Xiaohu/style/normalize.css">
+		<link rel="stylesheet" type="text/css" href="ui/Xiaohu/style/common.css">
+		<link rel="stylesheet" type="text/css" href="ui/Xiaohu/style/mobile.css" media="screen and (max-width:499px)">
+		<link rel="stylesheet" type="text/css" href="ui/Xiaohu/style/desktop.css" media="screen and (min-width:500px)">
+	</head>
+	<body>
+		<header class="xh-header">
+			<div class="xh-header-brand">
+				<a href="inde.html">小狐网络</a>
+			</div>
+			<ul class="xh-header-nav">
+				<li><a href="#" class="xh-active">首页</a></li>
+				<li><a href="#"></i>打印</a></li>
+				<li><a href="#"></i>音乐</a></li>
+				<li><a href="#">关于</a></li>
+			</ul>
+			<form class="xh-header-form xh-header-left xh-form-inline" data-role="search">
+			  <div class="xh-form-group">
+				<input type="text" class="xh-form-field xh-input-sm" placeholder="搜索">
+				<button type="submit" class="xh-btn xh-btn-default xh-btn-sm"><i class="fa fa-search"></i></button>
+			  </div>
+			</form>
+			<div class="xh-header-right">
+				<a href="#" class="xh-btn xh-header-btn"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a>
+				<a href="#" class="xh-btn xh-header-btn"><i class="fa fa-user-circle fa-fw"></i><span> 登录</span></a>
+				<a href="#" class="xh-btn xh-header-btn"><i class="fa fa-ellipsis-v fa-fw"></i><span> 登录</span></a>
+			</div>
+		</header>
+		<nav class="xh-nav">
+			<a href="#" class="xh-active"><i class="fa fa-comment"></i>微信</a>
+			<a href="#"><i class="fa fa-address-book"></i>通讯录</a>
+			<a href="#"><i class="fa fa-compass"></i>发现</a>
+			<a href="#"><i class="fa fa-user"></i>我的</a>
+		</nav>
+		<main id="content" class="xh-content">
+			<div class="xh-header">
+				<div class="xh-header-backbar">
+					<a href="nav.html">
+						<i class="fa fa-arrow-left fa-fw"></i>
+					</a>
+				</div>
+				<div class="xh-header-brand">
+					<h1>默认导航栏</h1>
+				</div>
+				<div class="xh-header-toolbar">
+					<a id="search_loader" class="xh-btn xh-header-btn"><i class="fa fa-search fa-fw"></i><span>搜索</span></a>
+				</div>
+			</div>
+			<article class="xh-article">
+				<h2>基本结构</h2>
+				<p>导航栏（Nav）是移动页面上主要的导航组件，是一个类名为xh-nav的nav元素，其导航链接项由若干a元素构成。代码如下：</p>
+				<p><code><pre>
+&lt;nav class="<b>xh-nav</b>"&gt;
+ &lt;a href="index.html"&gt;微信&lt;/a&gt;
+ &lt;a href="contacts.html"&gt;通讯录&lt;/a&gt;
+ &lt;a href="discover.html"&gt;发现&lt;/a&gt;
+&lt;/nav&gt;</pre>
+				</code></p>
+				<h2>当前位置</h2>
+				<p>在导航链接选项上添加xh-active可以设置该项目为当前位置，代码如下：</p>
+				<p><code>
+<pre>&lt;a href="index.html" 
+ class="<b>xh-active</b>"&gt;微信&lt;/a&gt;
+</pre>
+				</code></p>
+			</article>
+		</main>
+		<footer></footer>
+		<aside></aside>
+	</body>
+</html>
